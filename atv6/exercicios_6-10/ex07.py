@@ -1,5 +1,5 @@
 valorCom = float(input("Insira o valor da compra: "))
-prest = 5 
+prest = int(input("Insira a quantidade de prestações; MAX = 5"))
 valorPrestTotal = valorCom / prest
 valorDesc = valorCom * (20/100)
 valorDesc = valorCom - valorDesc
