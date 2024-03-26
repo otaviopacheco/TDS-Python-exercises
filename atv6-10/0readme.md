@@ -1,0 +1,1 @@
+inicio dos exercicios 6-10, lista sera adicionada futuramente
