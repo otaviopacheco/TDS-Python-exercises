@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+
+}
+body {
+    background-image: url(https://i.redd.it/546o72vbbyja1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+body p{
+    margin:2% 0% ;
+}

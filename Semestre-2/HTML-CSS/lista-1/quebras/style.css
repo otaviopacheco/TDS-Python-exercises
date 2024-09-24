@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+h1{
+    text-align: center;
+    margin: 0 5% ;
+}
+img {
+    height: 10%;
+    width: 10%;
+    display: block;
+}
+.container{
+    display: flex; 
+} 
