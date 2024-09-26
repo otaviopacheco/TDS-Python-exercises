@@ -1,0 +1,52 @@
+.rgb_blue-border  {
+    position: relative;
+    z-index: 0;
+    
+}
+
+.rgb_blue-border:hover::after{
+    content: "";
+    position: absolute;
+    bottom: -35%;
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(30,27,175,1) 31%, rgba(9,9,121,1) 56%, rgba(0,212,255,1) 100%); 
+    z-index: -1;
+    height: 5px;
+    width: 100%;
+    border-radius: 20px;
+    animation: glowing 20s linear infinite;
+    background-size: 600%;
+}
+.rgb_blue-border:hover::before{
+    content: "";
+    position: absolute;
+    bottom: -32%;
+    background: linear-gradient(90deg, rgb(67, 79, 184) 0%, rgb(39, 64, 173) 35%, rgb(58, 222, 255) 100%); 
+    z-index: -1;
+    height: 5px;
+    width: 100%;
+    border-radius: 20px;
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    filter: blur(5px);
+    opacity: 0.8;
+    background-size: 600%;
+}
+
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+
+/* @keyframes rainbowEffect {
+    0% {
+        background: linear-gradient(90deg, rgb(6, 1, 114) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+    50%{
+        background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgb(6, 1, 114) 35%, rgba(9,9,121,1) 100%);
+    }
+    100% {
+        background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgb(6, 1, 114) 35%, rgba(9,9,121,1) 100%);
+    }
+} */
+
