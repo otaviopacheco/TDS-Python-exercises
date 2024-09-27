@@ -5,17 +5,52 @@
     color: white;
 }
 body {
-    background-color: rgb(0, 0, 0);
-    background-size: 100%
+    background-color: #393939;
+    height: 100%;
+    padding:3% 0% 3% 0%;
+}
+.main-page{
+    background-color: black;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 5px;
+}
+li, a {
+    list-style: none; 
+    text-decoration: none;   
 }
 .menu_container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100%;
     width: 100%;
+    padding: 2.5rem 2.5rem;
+    text-align: center;
+    border-bottom: solid .4rem #393939;
+}  
+.sobreMim img,  h1, p{
+    display: block;
+    margin: auto auto;
+    text-align: center;
 }
-li, a{
-    list-style: none; 
-    text-decoration: none;
-    
+.image-box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 10px auto;
+    width: 30%;
+    height: 22rem;
+    background-color: black;
+    border-radius: 50%;
+    transition: 300ms ease-in-out;
+}
+.image-box img {
+    border-radius:50%;
+    width: 20rem;
+    height: 21rem;
+}
+
+.image-box:hover{
+    background-color: blue;
 }
