@@ -42,9 +42,9 @@ li, a {
     display: flex;
     justify-content:center;
     align-items: center;
-    margin: 10px auto;
-    width: 10%;
-    height: 10%;
+    margin: 9rem auto;
+    width: 40%;
+    height: 40%;
     background-color: black;
     border-radius: 50%;
     transition: 300ms ease-in-out;
