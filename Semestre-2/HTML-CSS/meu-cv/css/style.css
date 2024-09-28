@@ -28,7 +28,11 @@ li, a {
     padding: 2.5rem 2.5rem;
     text-align: center;
     border-bottom: solid .4rem #393939;
-}  
+} 
+.sobreMim{
+    height: 36rem;
+    width: 100%;
+} 
 .sobreMim img,  h1, p{
     display: block;
     margin: auto auto;
@@ -39,18 +43,23 @@ li, a {
     justify-content:center;
     align-items: center;
     margin: 10px auto;
-    width: 30%;
-    height: 22rem;
+    width: 10%;
+    height: 10%;
     background-color: black;
     border-radius: 50%;
     transition: 300ms ease-in-out;
 }
-.image-box img {
+.image-box img { 
     border-radius:50%;
-    width: 20rem;
-    height: 21rem;
+    width: 16.5rem;
+    height: 16.8rem
+}
+.info{
+    background-color: #393939;
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: 36rem;
+
 }
 
-.image-box:hover{
-    background-color: blue;
-}
