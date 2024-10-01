@@ -35,31 +35,37 @@ li, a {
 } 
 .sobreMim img,  h1, p{
     display: block;
-    margin: auto auto;
     text-align: center;
 }
 .image-box{
     display: flex;
     justify-content:center;
     align-items: center;
-    margin: 9rem auto;
+    margin: 9rem auto 3rem auto;
     width: 40%;
     height: 40%;
     background-color: black;
     border-radius: 50%;
     transition: 300ms ease-in-out;
+    
 }
 .image-box img { 
     border-radius:50%;
     width: 16.5rem;
-    height: 16.8rem
+    height: 16.8rem;
 }
 .info{
     background-color: #393939;
     display: block;
     margin: 0 auto;
-    width: 60%;
-    height: 36rem;
-
+    width: 70%;
+    height: 20rem;
+    border-radius: 35px;
+    border: solid 1px white;
 }
-
+.info h1{
+    padding-top: .5rem;
+}
+.experiencias{
+    margin-top: 5rem;
+}
