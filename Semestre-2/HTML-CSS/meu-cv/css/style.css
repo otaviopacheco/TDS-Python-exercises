@@ -51,8 +51,8 @@ li, a {
 }
 .image-box img { 
     border-radius:50%;
-    width: 16.5rem;
-    height: 16.8rem;
+    width: 15rem;
+    height: 15rem;
 }
 .info{
     background-color: #393939;
@@ -72,12 +72,10 @@ li, a {
 }
 .experiencias {
     margin-top: 5rem;
-
 }
 .Cursos{
     margin: 0 auto;
 }
-
 .experiencias img{
     display: flex;
     flex-direction: column;
