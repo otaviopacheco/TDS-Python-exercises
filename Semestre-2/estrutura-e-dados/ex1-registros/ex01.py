@@ -11,7 +11,7 @@ vecAgendas = []
 agendaTam = len(agenda)
  
 for j in range(agendaTam-1,0,-1):
-        for i in range(0,3,1):
+        for i in range(0,1,1):
             variaveis[i]=agenda[j]
         vecAgendas.append(agenda)
 print(vecAgendas)
