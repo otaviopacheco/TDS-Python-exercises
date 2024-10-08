@@ -71,17 +71,12 @@ li, a {
     font-size: 21px;
 }
 .experiencias {
-    margin-top: 5rem;
-}
-.Cursos{
     margin: 0 auto;
+    padding-top: 6.5rem;
 }
-.experiencias img{
-    display: flex;
-    flex-direction: column;
+.experiencias img {
     width: 25%;
     height: auto;
-    margin: 0 auto;
     background-color: white;
     justify-content: space-between;
 }
