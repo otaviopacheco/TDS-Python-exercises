@@ -1,5 +1,5 @@
 variaveis = []
-for i in range(4):
+for i in range(8):
       variaveis.append(input("Insira o dado:"))
 agenda = {
     0: variaveis[0],
@@ -10,8 +10,8 @@ agenda = {
 vecAgendas = []
 agendaTam = len(agenda)
  
-for j in range(agendaTam-1,0,-1):
-        for i in range(0,1,1):
-            variaveis[i]=agenda[j]
+for j in range(1):
+    for i in range(0,1,1):
+        variaveis[i]=agenda[j]
         vecAgendas.append(agenda)
 print(vecAgendas)
