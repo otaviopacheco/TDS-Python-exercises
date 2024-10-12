@@ -92,14 +92,13 @@ li, a {
 .cursos-imgs img {
     width: 20%;
     height: 280px;
-    background-color: #0004ff;
+    background-color: #3a3a3a
 }
 .despedida img{
     width: 35%;
     display: block;
     margin: 15px auto;
-    border-radius: 45px;
-
+    border-radius: 5%;
 }
 footer{
     display: flex;

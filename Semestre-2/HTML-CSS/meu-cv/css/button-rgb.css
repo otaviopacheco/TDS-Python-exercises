@@ -70,15 +70,15 @@
     position: absolute;
     background-color: blue;
     width: 38%;
-    height: 104%;
+    height: 105%;
     z-index: -1;
-    top: -5px3;
-    left: 273px;
+    top:calc(0% + -5px);
+    right: 31.2%;
     background: rgb(0,212,255);
     background: linear-gradient(315deg, rgba(0,212,255,1) 0%, rgba(57,53,255,1) 31%, rgba(15,15,255,1) 56%, rgba(0,212,255,1) 100%); 
     animation: glowing 20s linear infinite;
     background-size: 900%;
-    border-radius: 45px;
+    border-radius: 5%;
 }
 
 @keyframes glowing {
