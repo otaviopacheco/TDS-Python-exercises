@@ -94,26 +94,13 @@ li, a {
     height: 280px;
     background-color: #0004ff;
 }
-.despedida{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.despedida-img img{
+.despedida img{
+    width: 35%;
     display: block;
-    margin: 0 auto;
-    width: 70%;
-    border-radius: 35px;
-    padding: 20px;
-}
-.despedida-img{
-    background-color: #393939;
-    width:60%;
-    border-radius: 35px;
-}
+    margin: 15px auto;
+    border-radius: 45px;
 
-
+}
 footer{
     display: flex;
     justify-content: space-around;
