@@ -28,6 +28,8 @@ table{
     width: 100%;
     background-color: rgb(172, 172, 172);
     text-transform:capitalize;
+    border-spacing: 1px;
+    /* border-collapse: ; */
 }
 th,  td{
     padding: 5px;

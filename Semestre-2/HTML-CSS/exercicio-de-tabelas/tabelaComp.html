@@ -3,53 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css-Comp/style.css">
+    <link rel="stylesheet" href="css-Comp/style-comp.css">
     <title>Document</title>
 </head>
 <body>
-    <h4>Orçamento de Compra</h4>
-    <table border="1">
-        <tr>
-            <td>Produto</td>
-            <td>Qtde</td>
-            <td>Preço</td>
-            <td>Pedido Total</td>
-        </tr>
-        <tr class="Vazio">
-            <!-- Vazio -->
-        </tr>
-        <tr>
-            <td>Mouse Sem fio</td>
-            <td>3</td>
-            <td>R$ 30</td>
-            <td>R$ 90</td>
-        </tr>
-        <tr>
-            <td>SSD 256GB</td>
-            <td>1</td>
-            <td>R$ 250</td>
-            <td>R$ 250</td>
-        </tr>
-        <tr>
-            <td>placa de rede</td>
-            <td>1</td>
-            <td>R$ 88</td>
-            <td>88</td>
-        </tr>
-        <tr>
-            <td>memoria 8gb</td>
-            <td>R$ 2</td>
-            <td>179</td>
-            <td>358</td>
-        </tr>
-        <tr class="Vazio">
-            <!-- vazio -->
-        </tr>
-        <tr>
-            <td colspan="3">Total</td>
-            <td>R$ 745</td>
-        </tr>
-    </table>
-   
+    <div class="main-page">
+        <h4 class="Sumario">Orçamento de Compra</h4>
+        <table border="1">
+            <tr class="Sumario">
+                <th>Produto</th>
+                <th>Qtde</th>
+                <th>Preço</th>
+                <th>Pedido Total</th>
+            </tr>
+            <tr class="Vazio">
+                <!-- Vazio -->
+                <th colspan="4"></th>
+            </tr>
+            <tr>
+                <td>Mouse Sem fio</td>
+                <td>3</td>
+                <td>R$ 30</td>
+                <td>R$ 90</td>
+            </tr>
+            <tr>
+                <td>SSD 256GB</td>
+                <td>1</td>
+                <td>R$ 250</td>
+                <td>R$ 250</td>
+            </tr>
+            <tr>
+                <td>placa de rede</td>
+                <td>1</td>
+                <td>R$ 88</td>
+                <td>R$88</td>
+            </tr>
+            <tr>
+                <td>memoria 8gb</td>
+                <td>2</td>
+                <td>R$ 179</td>
+                <td>R$ 358</td>
+            </tr>
+            <tr class="Vazio">
+                <th colspan="4"></th>
+                <!-- vazio -->
+            </tr>
+            <tr class="Sumario">
+                <td colspan="3">Total</td>
+                <td>R$ 745</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
