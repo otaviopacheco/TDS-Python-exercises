@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: black;
+}
+.main-page{
+    display: block;
+    margin: 0 auto;
+    background-color: aliceblue;
+    height: 100%;
+    width: 70%;
+    color: black;
+    text-align: center;
+}
+h4{
+    border: 1px solid rgb(172, 172, 172);
+    background-color: rgb(172, 172, 172);
+    color: aliceblue;
+
+}
+table{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgb(172, 172, 172);
+    text-transform:capitalize;
+}
+th,  td{
+    padding: 5px;
+    border: solid 1px rgb(255, 255, 255);
+    margin: 0;
+    background-color:rgb(216, 213, 213);
+}
+.final td{
+    border: 1px solid rgb(172, 172, 172);
+    background-color: rgb(172, 172, 172);
+    color: aliceblue
+}
