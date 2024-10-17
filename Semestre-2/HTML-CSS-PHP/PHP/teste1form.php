@@ -22,11 +22,11 @@
         </select>
         <input type="submit">
     </form>
-    <form  action="scripts/ex4.php" method="post'">
+    <form  action="scripts/ex3.php" method="post'">
         <legend>maior menor</legend>
-        <input type="text" name="input1" placeholder="Insira do numero">
-        <input type="text" name="input2" placeholder="segundo do numero">
-        <input type="submit" value="" name="MaiorMenor">
+        <input type="text" name="n1" placeholder="Insira do numero">
+        <input type="text" name="n2" placeholder="segundo do numero">
+        <input type="submit" value="btn" name="MaiorMenor">
     </form>
 
 </body>
