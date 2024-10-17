@@ -21,9 +21,8 @@
        
         $fat = $fat * $i;
     };
-    echo "<br>Fatorial de $num é $fat";
-    echo "<br>$num1 $num2"
-        
+
+    
     
 
 ?>
