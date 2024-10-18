@@ -2,8 +2,10 @@
     
     
     $num = $_POST["number"]; 
+
     $num1 = $_POST["number1"];
     $num2 = $_POST["number2"];
+    $op = $_POST["op"];
     $count = 0;
     if ($num > 0)
         echo " é um número positivo";
@@ -18,12 +20,11 @@
     }while ($count < 10 );
         $fat = $num;
         for($i = $num-1; $i > 0; $i--){
-       
         $fat = $fat * $i;
     };
     echo "<br>Fatorial de $num é $fat";
-    echo "<br>$num1 $num2"
-        
-    
 
+    if ($num1 == $num2){
+        echo "esta certo";
+    };
 ?>
