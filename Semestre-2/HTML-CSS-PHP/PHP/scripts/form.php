@@ -23,8 +23,8 @@
         $fat = $fat * $i;
     };
     echo "<br>Fatorial de $num é $fat";
+    echo "<br>$num1 $num2"
+        
+    
 
-    if ($num1 == $num2){
-        echo "esta certo";
-    };
 ?>
