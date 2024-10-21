@@ -3,7 +3,5 @@ $possivelMes = [ "janeiro", "fevereiro", "março", "abril", "maio", "junho", "ju
 $mesInserido = $_POST["mesInserido"];
     if($mesInserido > 0 and $mesInserido <= 12){
         echo"o mes é ".$possivelMes[$mesInserido-1];
-
     }
-    
 ?>
