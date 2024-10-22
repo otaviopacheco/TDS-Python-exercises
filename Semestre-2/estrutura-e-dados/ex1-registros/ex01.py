@@ -14,4 +14,4 @@ for j in range(2):
     for i in range(0,1,1):
         variaveis[i]=agenda[j]
         vecAgendas.append(agenda)
-print(vecAgendas)
+print(vecAgendas) 
