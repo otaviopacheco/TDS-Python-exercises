@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="scripts/otavioPan..php" method="post">
+    <p>Bem vindo a OtavioPan escolha que produto você gostaria de comprar: </p>
+    <table border="1">
+        <tr>
+            <td>Codigo</td>
+            <td>Produto</td>
+            <td>Valor</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Panetone</td>
+            <td>49,90</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Peru</td>
+            <td>149,90</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>arroz a grega</td>
+            <td>49,90</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>saladas verdes</td>
+            <td>39,90</td>
+        </tr>
+    </table>
+    <p>Insira o codigo do produto que deseja comprar</p>
+    <select name="product" id="">
+        <option value="1">peru</option>
+        <option value="2">panetone</option>
+        <option value="3">arroz a grega</option>
+        <option value="4">saladas verdes</option>
+    </select>
+    <input type="text" name="qtd" placeholder="quantidade">
+    <input type="submit" value="enviar" >
+
+</form>    
+    
+</body>
+</html>
