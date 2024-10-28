@@ -1,5 +1,8 @@
 stackCars = []
-for i in range(1):
+stackEletricCars = []
+stackGasolineCars = []
+stackMax = 10
+while True:
     nomeDoCarro = input(str("Insira o nome do carro: "))
     marcaDoCarro = input(str("Insira o marca do carro: "))
     propulsao = input(str("é eletrico ou a gasolina?: "))
@@ -9,13 +12,16 @@ for i in range(1):
         "marca":marcaDoCarro,
         "propoulsao":propulsao
     }
+    if len(stackCars) == stackMax:
+        print("Stack cheio!")
+        break
     stackCars.append(cars)
+for i in range(stackMax):
     if stackCars[i]["propoulsao"] == "eletrico":
-        stackEletricCars = []
         stackEletricCars.append(stackCars[i])  
-        print ("deu")
-# print (stackCars)
+    elif stackCars[i]["propoulsao"] == "gasolina":
+        stackGasolineCars.append(stackCars[i])
+print (stackEletricCars, stackGasolineCars)
 
-# print(cars)
 
 
