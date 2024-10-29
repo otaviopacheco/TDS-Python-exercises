@@ -1,15 +1,17 @@
 row = []
 rowEletricCars = []
 rowGasolineCars = []
+
+
 maxRow = 2
 
 while True:
 
 
     rowLen = len(row)+1
-    carName = str(input("Insira o nome do carro"))
-    carBrand = str(input("Insira o nome da marcado carro"))
-    propulsion = str(input("é eletrico ou a gasolina"))
+    carName = str(input("Insira o nome do carro: "))
+    carBrand = str(input("Insira o nome da marcado carro: "))
+    propulsion = str(input("É eletrico ou a gasolina: "))
     propulsion = propulsion.lower()
 
 
@@ -21,7 +23,7 @@ while True:
 
     row.append(cars)
     if rowLen >= maxRow:
-        print("a linha esta cheia")
+        print("Fila cheia")
         break
     
 
