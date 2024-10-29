@@ -24,8 +24,8 @@ while True:
         print("Stack cheio!")
         break
 
-    
-for i in range(stackMax):
+maxStackLen = len(stackCars) - 1
+for i in range(maxStackLen, -1, -1):
     if stackCars[i]["propoulsao"] == "eletrico":
         stackEletricCars.append(stackCars[i])  
     elif stackCars[i]["propoulsao"] == "gasolina":

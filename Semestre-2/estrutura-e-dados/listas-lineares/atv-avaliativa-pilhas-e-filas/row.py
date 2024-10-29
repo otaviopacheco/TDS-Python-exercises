@@ -28,8 +28,7 @@ while True:
     
 
 
-rowLenTot = len(row) - 1 
-for i in range(rowLenTot, -1, -1): 
+for i in range(rowLen): 
     if row[i]["propulsion"] == "eletrico":
         rowEletricCars.append(row[i])
     elif row[i]["propulsion"] == "gasolina":
