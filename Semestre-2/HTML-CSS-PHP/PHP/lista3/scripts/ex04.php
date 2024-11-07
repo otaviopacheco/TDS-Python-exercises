@@ -1,32 +1,27 @@
 <?php 
 
-$vecQtd = [];
+
 $lancamentos = $_POST["rodadas"];
 function qtdlancamentos($lancamentos){
-    $vecDados = [1,2,3,4,5,6];
+    $vecQtd = [0,0,0,0,0,0];
     while ($lancamentos > 0){
         $random = rand(1,6);
+        $vecQtd[$random - 1] += 1;         
+
+        echo "$random<br>";
 
 
-        for ($i = 0; $i <= $vecDados; $i++){
-
-
-            if ($random == $i-1){
-
-                if ($random == 0){
-                    
-
-                }
-
-
-            }
-
-
-            
-        }
-
+       
+    $lancamentos = $lancamentos-1;
+    
     }
+    
+        print_r($vecQtd);
+
+
 
 }
+qtdlancamentos($lancamentos)
 
 ?>
+

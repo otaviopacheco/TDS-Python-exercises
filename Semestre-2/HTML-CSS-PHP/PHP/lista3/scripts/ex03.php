@@ -1,24 +1,34 @@
 <?php 
 $number = $_POST["number"]; 
+$opt = $_POST["op"]; 
 
-// print_r($number);
+
+
+
 function compararMenor($number){
+    $menorNumero = $number[1];
     for($i = 0; $i < count($number); $i++){
-        if ($number[$i] > $number[2] and $number[$i]> $number[1]){
-            echo "o menor numero é $number[$i] caso1";
-            $menor = $number[$i];
-            return $menor;
-        }else if ($number[$i] < $number[2] and $number[$i] <  $number[0]){
-            echo "o menor numero é $number[$i] caso2";
-            $menor = $number[$i];
-            return $menor;
-        }else if ($number[$i] < $number[0] and $number[$i]< $number[1]){
-            echo "o menor numero é $number[$i] caso3";
-            $menor = $number[$i];
-            return $menor;
+        if ($menorNumero > $number[$i]){
+            $menorNumero = $number[$i];
+        } 
+        
+    }
+    echo "O menor número é $menorNumero";
+}
+function compararMaior($number){
+    $maiorNumero = $number[1];
+    for($i = 0; $i < count($number); $i++){
+        if ($maiorNumero < $number[$i]){
+            $maiorNumero = $number[$i];
         }
     }
+    echo "O maior número é $maiorNumero";
+}
+if($opt == "maior"){
+    echo compararMaior($number);
+}else{
+    echo compararMenor($number);
 }
 
-echo compararMenor($number)
+
 ?>
