@@ -7,16 +7,28 @@ function impar($numero){
     return false;
 }
 $eImpar = impar($numero);
+
 function primo($eImpar,$numero){
     if ($eImpar == true){
-        return 'rolou';
+        $primos = [1,2];
+        for ($i = 2; $i < $numero; $i++){
+            $numero = (int) $numero;
 
-    }else{
+            if($numero % $i == 0){
+                return 'não é primo';
+            }else{
+
+                $primo[] = $i;
+                
+                }
+            }
+            print_r($primos);
+        }else{
         return "va pa pqp";
     }
+}
 
 
-};
 $Eprimo = primo($eImpar,$numero);
 echo $Eprimo;
 ?>
