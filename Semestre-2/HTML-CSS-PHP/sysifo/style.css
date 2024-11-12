@@ -7,20 +7,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 
 .card {
     margin: 10px 10px 0 10px;
     position: relative;
-    align-items: center;
-    border-radius:45px;
-    
 }
 
 .card img{
     width: 20rem;
     height: 32rem;
+    align-items: center;
+    border-radius:45px;
 }
 
 .card:hover::after{ 

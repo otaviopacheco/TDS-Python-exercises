@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <title>exe 2</title>
+</head>
+<body><h1>Argumentos</h1>
+<form method="post" action="scripts/php2.php">
+Valor 1 <input type="number" name="num1"><br>
+Valor 2 <input type="number" name="num2"><br>
+Valor 3 <input type="number" name="num3">
+<input type="submit" value="Verificar">
+
+
+</form>
+</body>
+</html>
