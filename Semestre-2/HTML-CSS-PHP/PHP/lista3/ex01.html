@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="scripts/ex01.php" method="post">
-        <p>Conversor de temperatura</p>
-        <input type="text" name="celsius" placeholder="temp em celsius">
-        <input type="text" name="fah">  
-        <input type="submit" value="Enviar">    
-    </form>
 
+    <title>exe 1</title>
+</head>
+<body><h1>Pergunta</h1>
+<form method="post" action="scripts/php1.php">
+    <input type="number" name="numero">
+    <select name="select"> 
+        <option value="1">Celsius para Farenheit </option>
+        <option value="2">Farenheit para Celsius</option>
+    </select>
+    <input type="submit" value="Converter">
+</form>
 </body>
 </html>
