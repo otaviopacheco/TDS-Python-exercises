@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="global.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    /* Estilo para ocultar o overflow do corpo quando o menu estiver aberto */
+    body.menu-open {
+      overflow: hidden;
+    }
+  </style>
 </head>
 <body>
   
@@ -28,7 +34,7 @@
     </ul>
   </nav>
   
-  
+  <center>
   <div class="wrapper">
     <div class="card card_text-firstImage">
         <img src="assets/IMG/AdobeStock_286032339-1-740x493.jpeg" alt="">
@@ -74,7 +80,23 @@
   </div>
 
   <footer><p>Copyright</p></footer>
+
+  <script>
+    
+  const check = document.getElementById('check');
+  check.addEventListener('change', function() {
+      document.body.classList.toggle('menu-open', this.checked);
+  });
+
+  // Script para corrigir o desaparecimento da área de contato ao redimensionar
+  window.addEventListener('resize', function() {
+      if (window.innerWidth > 890) {
+          document.body.classList.remove('menu-open');
+          check.checked = false;
+      }edge
+  });
+</script>
+
+  
 </body>
 </html>
-
-

@@ -1,10 +1,9 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
+body.menu-open .wrapper { 
+    display: none;
+ }
 .wrapper{
-    -ms-transform-origin-z: -1;
+    -ms-transform-origin-z: -2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,4 +54,4 @@
     transform: scale(1.03);
     border: solid 3px rgb(3, 255, 3);
 }
-/* Estilo para esconder os cards quando o menu móvel está aberto */ body.menu-open .wrapper { display: none; }
+/* Estilo para esconder os cards quando o menu móvel está aberto */ 
