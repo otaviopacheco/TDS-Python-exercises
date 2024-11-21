@@ -7,7 +7,7 @@ class contaBanco {
     private $status;
 
 
-    public function _construtor($numero, $tipo, $dono, $saldo, $status){
+    public function __construct($numero, $tipo, $dono, $saldo, $status){
         $this->numero = $numero;
         $this->tipo = $tipo; 
         $this->dono = $dono;
@@ -64,11 +64,11 @@ class contaBanco {
 
     // metodos 
     public function debitar(){
-        if(){
+        // if(){
 
 
             
-        }
+        // }
     }
 
 
