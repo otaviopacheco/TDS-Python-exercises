@@ -63,13 +63,13 @@ class contaBanco {
 
 
     // metodos 
-    public function debitar(){
-        if(){
+    // public function debitar(){
+    //     if(){
 
 
-            
-        }
-    }
+
+    //     }
+    // }
 
 
 
