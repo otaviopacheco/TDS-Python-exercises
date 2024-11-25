@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(109, 109, 109);
+
+}
+menu img{
+    margin: 0 10px 0 0;
+    width: 60px;
+    height:60px;    
+}
+.sections{
+    background-color: rgb(139, 139, 139);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.sections a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 0 0 0 20px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.cards img{
+    width: 9rem;
+    height: 15rem;
+    
+}
+.card {
+    margin: 20px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(107, 107, 107);
+    border-radius: 20px;
+    width: 7rem;
+    height: 6rem;
+    
+}
+.card img{
+    height: 40px;
+    width: 50px;
+    margin-left:-10px;
+}
+
+.table {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+    text-align: center;
+    align-items: center;
+}
+table tr td{
+    color: white;
+    padding: 0 15px 0 5px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: black;
+    border-radius: 5px;
+    
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.formulario .btn{
+    margin-top: 15px;
+}
