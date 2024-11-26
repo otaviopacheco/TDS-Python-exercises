@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Peso Ideal</title>
+</head>
+<body>
+    <h1>Calculadora de Peso Ideal</h1>
+    <form action="scripts/ex12.php" method="post">
+        <label for="altura">Digite a altura (em metros):</label>
+        <input type="text" name="altura" id="altura" required>
+        
+        <label for="sexo">Escolha o sexo:</label>
+        <select name="sexo" id="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select>
+
+        <input type="submit" value="Calcular Peso Ideal">
+    </form>
+</body>
+</html>
