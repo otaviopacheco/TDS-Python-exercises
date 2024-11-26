@@ -85,7 +85,8 @@ class contaBanco {
         }elseif($valorOperacao >$this->saldo){
             return "tu n tem toda essa grana nao";
         }else{
-            return $this->saldo = $this->saldo - $valorOperacao;
+            $this->saldo = $this->saldo - $valorOperacao;
+            return "ok, novo saldo ".$this->getSaldo();
     
         }
     }
@@ -99,13 +100,13 @@ class contaBanco {
         if ($this->status == "inativo") {
             return "impossível debitar";
         } else {
-            $this->saldo += $valorOperacao; // Outra forma de fazer a operação de soma
-            return $this->saldo;
+            $this->setSaldo($this->getSaldo() + $valorOperacao); // Outra forma de fazer a operação de soma
+            return $this->getSaldo();
         }
     }
     public function mensalidade($tipo){
         if($tipo == "CP"){
-            return "sua taxa é de 10 Reais";
+            return 10;
         }elseif($tipo == "CC"){
             return "sua taxa é de 12 reais";
 
