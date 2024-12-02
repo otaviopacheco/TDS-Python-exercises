@@ -18,11 +18,7 @@ $dc = $novaConta->getDono();
 $t = $novaConta->getTipo();
 $st = $novaConta->getStatus();
 $sd = $novaConta->getSaldo(); 
-//$sdSc = $novaConta->sacar($valorOperacao);
-//$nSt = $novaConta->mudarStatus($statusConta);
-//$depSd = $novaConta->depositar($valorOperacao);
-//$tpC= $novaConta-> mensalidade($tipoConta);
-//$rtn = $novaConta->investir ($valorOperacao);
+
 
 
 
