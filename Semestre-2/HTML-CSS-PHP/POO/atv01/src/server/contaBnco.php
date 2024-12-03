@@ -31,10 +31,10 @@ class contaBanco {
     }
     public function setSaldo($saldo){
         $this->saldo = $saldo;
+    }public function setStatus($status){
+        $this->status = $status; 
     }
-    public function setStatus($status){
-        $this -> status = "ativo";
-    }
+    
 
 
 
