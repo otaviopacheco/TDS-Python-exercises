@@ -5,18 +5,20 @@ class contaBanco {
     private $dono;
     private $saldo;
     private $status;
+    private $retornoInvestido;
 
 
-    public function __construct($numero, $tipo, $dono,  $status){
+    public function __construct($numero, $tipo, $dono,  $status, $retornoInvestido, $saldo){
         $this->numero = $numero;
         $this->tipo = $tipo; 
         $this->dono = $dono;
-        $this->saldo = 1000;
+        $this->saldo = $saldo;
         $this->status = $status;
+        $this->retornoInvestido = $retornoInvestido;
     }
 
 
-    // getters 
+    // setters 
     public function setNumero($numero){
         $this->numero = $numero;
     }
@@ -34,14 +36,23 @@ class contaBanco {
     }public function setStatus($status){
         $this->status = $status; 
     }
+<<<<<<< HEAD
     
+=======
+    public function setStatus($status){
+        $this->status = $status;
+    }
+    public function setRetornoInvestido($retornoInvestido){
+        $this->retornoInvestido = $retornoInvestido;
+
+    }
+>>>>>>> 24b0607123e0291cb8cd39e956b5f2d1f7677aa9
 
 
 
 
 
-
-    // setters 
+    // getters 
     public function getNumero(){
         return $this->numero;
     }
@@ -60,6 +71,9 @@ class contaBanco {
     public function getSaldo(){
         return $this->saldo;
     }
+    public function getRetornoInvestido(){
+        return $this->retornoInvestido;
+    }
 
 
 
@@ -69,10 +83,16 @@ class contaBanco {
 
     
     public function mudarStatus($statusConta){
-        if ($this->saldo > 0 and $statusConta == "inativo"){
+        if ($this->saldo > 0 and $statusConta == "ativo"){
             return "você precisa retirar o dinheiro para fechar a conta";
+        } elseif ($this->saldo < 0 and $statusConta == "ativo"){
+            return "você precisa pagar seus debitos p o dinheiro ara fechar a conta";
+        }elseif  ($this->saldo == 0 and $statusConta == "ativo"){
+                $this->setStatus("inativo");
+                return "conta fechada";
+        }  
 
-        }
+
     }
 
 
@@ -100,7 +120,7 @@ class contaBanco {
         if ($this->status == "inativo") {
             return "impossível debitar";
         } else {
-            $this->setSaldo($this->getSaldo() + $valorOperacao); // Outra forma de fazer a operação de soma
+           $this->setSaldo($this->getSaldo() + $valorOperacao); // Outra forma de fazer a operação de soma
             return $this->getSaldo();
         }
     }
@@ -111,8 +131,9 @@ class contaBanco {
             return "sua taxa é de 12 reais";
 
         }
-    
-
+    }
+    public function investir ($valorOperacao){
+        return ($valorOperacao *1000000/100)/100;
 
     }
 

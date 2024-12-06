@@ -9,44 +9,44 @@
 // $opOpcao = $_POST["op"];
 
 
-// $novaConta = new contaBanco($numeroConta, $tipoConta, $donoConta, $statusConta);
+$novaConta = new contaBanco($numeroConta, $tipoConta, $donoConta, $statusConta);
 
 
 
-// $c = $novaConta->getNumero();
-// $t = $novaConta->getTipo();
-// $st = $novaConta->getStatus();
-// $sd = $novaConta->getSaldo(); 
-// $sdSc = $novaConta->sacar($valorOperacao);
-// $nSt = $novaConta->mudarStatus($statusConta);
-// $depSd = $novaConta->depositar($valorOperacao);
-// $tpC= $novaConta-> mensalidade($tipoConta);
+$c = $novaConta->getNumero();
+$t = $novaConta->getTipo();
+$st = $novaConta->getStatus();
+$sd = $novaConta->getSaldo(); 
+$sdSc = $novaConta->sacar($valorOperacao);
+$nSt = $novaConta->mudarStatus($statusConta);
+$depSd = $novaConta->depositar($valorOperacao);
+$tpC= $novaConta-> mensalidade($tipoConta);
 
 
 
 
 
-// if($opOpcao == "info"){
-//     echo "Número da Conta: ".$c."<br>";
-//     echo "Tipo da Conta: ".$t."<br>";
-//     echo "Status da Conta: ".$st."<br>";
-//     echo "Saldo atual: ".$sd."<br>";
-// } elseif($opOpcao == "sacar"){
+if($opOpcao == "info"){
+    echo "Número da Conta: ".$c."<br>";
+    echo "Tipo da Conta: ".$t."<br>";
+    echo "Status da Conta: ".$st."<br>";
+    echo "Saldo atual: ".$sd."<br>";
+} elseif($opOpcao == "sacar"){
 
-//     echo $sdSc;
-
-
-// }elseif($opOpcao == "depositar"){
-//     echo $depSd;
+    echo $sdSc;
 
 
-// }elseif($opOpcao == "status"){
-//     echo $nSt;
+}elseif($opOpcao == "depositar"){
+    echo $depSd;
 
 
-// }elseif($opOpcao == "pagarMensal"){
-//     echo $tpC;
-// }
+}elseif($opOpcao == "status"){
+    echo $nSt;
+
+
+}elseif($opOpcao == "pagarMensal"){
+    echo $tpC;
+}
 
 
 
